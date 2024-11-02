@@ -1,0 +1,72 @@
+CONFIGURAR GIT y GITHUB
+
+ESTO SOLO SE HACE LA PRIMERA VEZ, A MENOS QUE SE QUIERA CAMBIAR EL USUARIO.
+git config --global user.name '[firstname lastname]'
+Para saber de quién es el commit
+Es tu nombre de usuario en GitHub
+Solo se hace una vez al inicio, a menos si queremos cambiar de usuario.
+En mi caso:
+git config --global user.name '[FernandoJB08]'
+CONFIRMACIÓN:
+git config --global user.name
+
+git config --global user.email '[valid-email]'
+Para saber cómo contactarlo.
+Es el correo con el que te registraste a GitHub
+En mi caso:
+git config --global user.email '[ferjimbaripn@gmail.com]'
+CONFIRMACIÓN:
+git config --global user.email
+
+AÑADIR ARCHIVOS.
+
+Para añadir archivos primero requerimos inicializar un repositorio en Git.
+El repositorio es el lugar en el que se va a almacenar todo el historial
+de nuestro proyecto.
+
+Usamos el comando git init para crear el repositorio.
+Al dar enter, automáticamente se crea una carpeta .git. Aquí se 
+almacena todo el historial del proyecto.
+
+En Git tenemos 3 etapas muy importantes:
+
+1. Working directory
+En donde estamos trabajando ahorita, es el lugar donde yo cree mi
+archivo Fernando.txt
+
+-> git add ->
+
+2. Staging area.
+Es el área de preparación en donde vamos a agergar los archivos nuevos
+que queremos que se queden en esa versión de nuestro proyecto.
+
+El área de preparación actúa como un espacio intemredio entre el directorio
+de trabajo (donde se realizan las modificaciones) y el respositorio (donde se
+almacenan las confirmaciones).
+
+-> git commit ->
+
+3. Repositorio
+Lugar donde se guardan los commits.
+
+ANALOGÍA:
+Un commit es una fotografía que vamos a tomarle a nuestro proyecto.
+En un repositorio nosotros podemos hacer muchos commits, es decir, podemos
+tomarle muchas fotografías a cadas versión de nuestro proyecto, y cuando
+queramos regresar a una versión en específico, cada commit tiene un identificador
+específico, entonces en cualquier momento podemos regresar a esa versión anterior.
+
+En Visual Studio, cuando trabajamos con Git hay una extensión que nos permite
+ver nuestro archivos en otro color.
+El color verde con una 'U' indica 'unstaged' indica que se ha modificado pero no se ha subido
+al área de preparación.
+
+SUBIR ARCHIVOS AL STAGING AREA.
+Usamos el comando 'git add', posteriormente escribimos el nombre del archivo
+Ejemplo: 
+git add 'Fernando.txt'
+
+
+
+
+
