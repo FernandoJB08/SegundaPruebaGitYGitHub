@@ -72,7 +72,7 @@ Con git status se obtiene información sobre el estado actual del repositorio. P
 detalles sobre los cambios que has realizado en tus archivos y cómo están en relación con
 el repositorio.
 
-Para hacer un commit necesitamos usar el comando 'git commit -m 'Descripción general de lo que modificamos en el proyecto'' para guardarlo.
+Para hacerg un commit necesitamos usar el comando 'git commit -m 'Descripción general de lo que modificamos en el proyecto'' para guardarlo.
 AL hacer el commit, nos devuelve un hash, este es el identificador del commit, es único y no se
 puede repetir.
 
@@ -91,5 +91,10 @@ Muestra el autor, día y hora en que se realizó el cambio.
 Para regresar al commit de mi interés, en este caso el primero, voy a escribir git reset y posteriormente el hash del commit:
 git reset '8cd2421149ad8a576e91cee5dcaf0a4022d53173'
 
+Para agregar varios archivos al staging area basta con escribir
+git add .
 
+Para regresar completamente al primer commit escribimos git reset --hard y el hash del primer commit
+
+Hola 
 
