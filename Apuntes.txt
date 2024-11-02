@@ -68,8 +68,28 @@ git add 'Fernando.txt'
 Con 'git status' me indica en qué estado se encuentra mi repositorio de git
 actualmente e indica cuántos commits tenemos, además nos muestra los cambios a ser guardados.
 
-Para hacer un commit necesitamos usar el comando 'git commit -m 'Descripción general de lo que modificamos en el proyecto'' para guardarlo
+Con git status se obtiene información sobre el estado actual del repositorio. Proporciona
+detalles sobre los cambios que has realizado en tus archivos y cómo están en relación con
+el repositorio.
 
+Para hacer un commit necesitamos usar el comando 'git commit -m 'Descripción general de lo que modificamos en el proyecto'' para guardarlo.
+AL hacer el commit, nos devuelve un hash, este es el identificador del commit, es único y no se
+puede repetir.
+
+Por ejemplo: Si modifico el nombre de mi archivo, al hacer un git status, este me indicara que, para git, se eliminó el archivo
+original y se agregó un nuevo archivo, por lo cual hay que crear un neuvo commit.
+Primero hacemos un git add y posteriormente git status, y me indica que los cambios son lo que se encuentra en verde
+y el archivo original se eliminó. Posteriomrente podemos hacer un nuevo git commit.
+Después de hacer un git status, me indicara que se borró el archivo orignal y no hay nada más por ser
+confirmado.
+
+En el caso de que me arrpienta y quiera regresar al archivo anterior, usamos el comando 'git log'
+Nos aparece todos los commits y delante de ellos sus respectivos hashs muy largos, que son los identificadores de los commits, después dice HEAD
+que nos indica la cabeza del commit, es decir el commit más actual.
+Muestra el autor, día y hora en que se realizó el cambio.
+
+Para regresar al commit de mi interés, en este caso el primero, voy a escribir git reset y posteriormente el hash del commit:
+git reset '8cd2421149ad8a576e91cee5dcaf0a4022d53173'
 
 
 
