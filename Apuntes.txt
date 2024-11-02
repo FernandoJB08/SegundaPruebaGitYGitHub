@@ -96,5 +96,15 @@ git add .
 
 Para regresar completamente al primer commit escribimos git reset --hard y el hash del primer commit
 
-Hola 
+A veces tenemos varios archivos en el staging area, para bajar uno de esos archivos que no queremos
+subir al commit hacemos un git reset 'nombre del archivo'
+
+Los archivos de color verde se van a guardar en el commit, los de color rojo en lka computadora
+pero git no les va a dar seguimiento.
+
+Si conforme avanzan mis commits y yo siempre quiero ignorar el mismo archivo o carpeta
+usamos el archivo git ignore, el cual se crea dentro de la carpeta del repositorio.
+
+Dentro de esta carpeta escribiremos el nombre del archivo o carpeta que queramos que git
+ignore
 
