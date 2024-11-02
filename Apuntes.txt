@@ -65,7 +65,10 @@ SUBIR ARCHIVOS AL STAGING AREA.
 Usamos el comando 'git add', posteriormente escribimos el nombre del archivo
 Ejemplo: 
 git add 'Fernando.txt'
+Con 'git status' me indica en qué estado se encuentra mi repositorio de git
+actualmente e indica cuántos commits tenemos, además nos muestra los cambios a ser guardados.
 
+Para hacer un commit necesitamos usar el comando 'git commit -m 'Descripción general de lo que modificamos en el proyecto'' para guardarlo
 
 
 
